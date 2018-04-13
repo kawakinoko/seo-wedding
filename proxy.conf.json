@@ -1,0 +1,7 @@
+{
+  "/api/*": {
+    "target": "https://firestore.googleapis.com/v1beta1/projects/seo-wedding/databases/(default)/documents/",
+    "secure": true,
+    "logLevel": "debug"
+  }
+}
