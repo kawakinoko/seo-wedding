@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopMainComponent implements OnInit {
 
+  intro = 'assets/images/intro2.png';
+  photo = 'assets/images/2end1.png';
   constructor() { }
 
   ngOnInit() {

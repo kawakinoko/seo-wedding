@@ -1,0 +1,20 @@
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 100%;               
+    background-color:lightgray;
+    height: 1px;
+}
+
+.name {
+    color: gray;
+}
+
+.comment {
+    color: gray;
+}
+
+.input-form {
+    margin-right: 10px;
+}

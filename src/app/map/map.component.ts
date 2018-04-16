@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapComponent implements OnInit {
 
+  mapThumb = 'assets/images/location1.png';
   constructor() { }
 
   ngOnInit() {

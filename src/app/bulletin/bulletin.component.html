@@ -1,3 +1,20 @@
-<p>
-  bulletin works!
-</p>
+<div fxLayout="column">
+  <div *ngFor="let post of posts | async" fxFlex>
+    <div fxLayout="row">
+      <div class="name" fxFlex="20">
+        {{ post.name }}
+      </div>
+      <div class="comment" fxFlex="80">
+        {{ post.comment }}
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div fxFlex>
+    <div class="form-group" fxLayout="row">
+      <input class="input-form form-control" type="text" [(ngModel)]="post.name.stringValue" fxFlex="20" placeholder="이름">
+      <input class="input-form form-control" type="text" [(ngModel)]="post.comment.stringValue" fxFlex="60" placeholder="한줄 코멘트">
+      <button type="button" class="btn btn-primary" (click)="writePost()">축하하기</button>
+    </div>
+  </div>
+</div>

@@ -1,4 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-top-main></app-top-main>
-<router-outlet></router-outlet>
-
+<div class="content-wrapper center">
+  <app-top-main></app-top-main>
+  <tabset>
+    <tab heading="오시는 길"><app-map></app-map></tab>
+    <tab heading="방명록"><app-bulletin></app-bulletin></tab>
+    <tab heading="마음 전하는 곳"><app-convey-heart-info></app-convey-heart-info></tab>
+  </tabset>
+</div>

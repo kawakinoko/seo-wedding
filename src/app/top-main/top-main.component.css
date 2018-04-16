@@ -1,0 +1,22 @@
+.intro {
+    width: 80%;
+    margin-left: 120px!important;
+    margin-right: auto;
+}
+
+.text-fluid {
+    width: 80%;
+    word-wrap: break-word;
+}
+
+img {
+    width: 80%;
+    min-height:1px;
+    height: auto;
+}
+
+.center * {
+    margin: auto;
+    padding: 10px;
+}
+
