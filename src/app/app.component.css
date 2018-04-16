@@ -1,5 +1,6 @@
 .content-wrapper {
-    width: 40%;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
     padding: 10px;
 }
@@ -7,11 +8,10 @@
 .center * {
     margin: auto;
     padding: 10px;
-/*    text-align: center;*/
 }
 
 tab {
-    height: 1000px;  
+    height: calc(100vh);
 }
 
 .nav-item {

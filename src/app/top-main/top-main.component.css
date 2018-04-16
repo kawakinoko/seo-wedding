@@ -1,6 +1,6 @@
 .intro {
     width: 80%;
-    margin-left: 120px!important;
+    margin-left: calc(15%)!important;
     margin-right: auto;
 }
 

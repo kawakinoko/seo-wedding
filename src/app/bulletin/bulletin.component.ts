@@ -16,6 +16,8 @@ export class BulletinComponent implements OnInit {
   }[]>;
 
   post: BulletinField;
+
+  baseUrl = 'https://firestore.googleapis.com';
   constructor(private http: HttpClient) {
     this.posts = this.getPosts();
     this.post = new BulletinField();
@@ -37,7 +39,7 @@ export class BulletinComponent implements OnInit {
       'Pragma': 'no-cache',
       'Expires': 'Sat, 01 Jan 2000 00:00:00 GMT'
     };
-    return this.http.get('/v1beta1/projects/seo-wedding/databases/(default)/documents/bulletin', { headers: header }).pipe(
+    return this.http.jsonp(this.baseUrl + '/v1beta1/projects/seo-wedding/databases/(default)/documents/bulletin', 'callback').pipe(
       map((res) => <BulletinResource[]>res['documents'].sort(
         (a, b) => {
           const dateA = Date.parse(a.createTime);

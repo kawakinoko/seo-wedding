@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { COMPOSITION_BUFFER_MODE } from '@angular/forms';
 
 import { AppComponent } from './app.component';
@@ -28,7 +28,8 @@ import { AppBootstrapModule } from './app-bootstrap.module';
     AppRoutingModule,
     FlexLayoutModule,
     AppBootstrapModule,
-    HttpClientModule
+    HttpClientModule,
+    HttpClientJsonpModule
   ],
   providers: [
     { provide: COMPOSITION_BUFFER_MODE, useValue: false }

@@ -2,7 +2,11 @@ hr {
     border: 0;
     clear:both;
     display:block;
-    width: 100%;               
-    background-color:lightgray;
+    width: 100%;
+    background-color:darkgray;
     height: 1px;
+}
+
+.map-location {
+    width: 100%
 }
